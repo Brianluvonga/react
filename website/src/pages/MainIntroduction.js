@@ -20,10 +20,10 @@ const useStyles = makeStyles((theme) => ({
     },
     introSection: {
         color: "yellow",
-        padding: 15
+        // padding: 15
 
     },
-   
+
 
     mainGridItem: {
         display: "flex",
@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         padding: theme.spacing(6)
     },
-    introQuote:{
-        padding:5
+    introQuote: {
+        padding: 5
     }
 
 }));
@@ -60,8 +60,10 @@ export default function MainIntroduction() {
 
                 <CardMedia />
             </Grid>
+         
 
         </Grid>
+
 
     );
 }

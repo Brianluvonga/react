@@ -1,31 +1,42 @@
 import React from 'react';
 import './App.css';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Container from '@material-ui/core/Container';
-import NavigationBar from './NavigationBar';
+import Grid from '@material-ui/core/Grid';
 
-import Homepage from './Homepage';
-import About from './About';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import NavigationBar from './NavigationBar';
 import Footer from './Footer';
+import Navigation from './Navbar/Navigation';
+import Interests from './components/Interests';
+import Blog from './components/Blog';
+import Portfolio from './pages/Portfolio';
+
+
+
 
 
 
 
 function App() {
   return (
-    <div className="App">
-      <CssBaseline />
-      <NavigationBar />
 
-      <Container>
-        <main>
-          <Homepage />
-          <About />
-        </main>
-      </Container>
+    <Router>
+      <Navigation />
+      <Homepage />
+      <Grid item lg={12} sm={12} xs={12}>
+        <h4 className="hobbies">Portfolio</h4>
+        <Portfolio />
+        <h4 className="hobbies">My Interests</h4>
+        <Interests />
+        <h4 className="hobbies">Blog</h4>
+        <Blog />
+      </Grid>
       <Footer />
+    </Router>
 
-    </div>
+
+
+
   );
 }
 

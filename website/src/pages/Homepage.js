@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 
     mainIntro: {
         textAlign: "left",
-        // padding: 6
+        padding: 6,
         marginTop: 50
 
     },
@@ -27,13 +27,16 @@ const useStyles = makeStyles((theme) => ({
 export default function Homepage() {
     const myStyles = useStyles();
     return (
+ 
         <Grid container spacing={3}>
             <Grid item lg={12} sm={12} xs={12} className={myStyles.mainIntro}>
                 <MainIntroduction />
             </Grid>
+
             <Grid item sm={6} xs={12} >
                 <GridItems className={myStyles.webDev} title="Web Development" subheader="Full Stack Web Developer" description="Skills in php,mysql,html,css and bootstrap.
                     Web frameworks include; react,django and flask" />
+                    
             </Grid>
             <Grid item sm={6} xs={12}>
                 <GridItems title="App Development" subheader="Cross Platform Frameworks" description="From simple to complex mobile applications, 

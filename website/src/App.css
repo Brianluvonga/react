@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.mylogo{
+  color:#61dafb
+}
+.hobbies{
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}

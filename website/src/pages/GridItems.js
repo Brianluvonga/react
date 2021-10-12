@@ -8,8 +8,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles((theme) => ({
+    heading: {
+        textAlign: 'center',
 
-
+    }
 
 }));
 
@@ -19,10 +21,9 @@ export default function MyGridItems(props) {
     const myStyles = useStyles();
     return (
         <Card>
-            <CardHeader title={props.title} subheader={props.subheader} />
-            <CardMedia 
-            className={myStyles.myImage}
-            
+            <CardHeader title={props.title} subheader={props.subheader} className={myStyles.heading} />
+            <CardMedia
+                className={myStyles.myImage}
             />
             <CardContent>
                 <Typography>
@@ -33,7 +34,7 @@ export default function MyGridItems(props) {
                 <IconButton>
                     {props.icons}
                 </IconButton>
-            </CardActions> 
+            </CardActions>
         </Card>
 
     );

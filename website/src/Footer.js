@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function Footer() {
-    const myStyles = useStyles();
+    // const myStyles = useStyles();
     return (
 
         <Box>
