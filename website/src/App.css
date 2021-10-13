@@ -42,5 +42,11 @@
 .hobbies{
   text-align: center;
   padding: 10px;
-  font-size: 25px;
+  font-size: 35px;
+}
+
+.services{
+  text-align: center;
+  padding: 10;
+  font-size: 35px;
 }

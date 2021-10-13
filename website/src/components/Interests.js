@@ -55,7 +55,7 @@ export default function Interests() {
                     {/* <img src={require('./me.jpg')} width="300" height="400" /> */}
 
                 </Typography>
-                <Button variant="contained" style={{ maxWidth: '30px', maxHeight: '30px', minWidth: '150px', minHeight: '30px', textAlign: 'center' }}>Read More</Button>
+                <Button variant="contained" style={{ maxWidth: '30px', maxHeight: '30px', minWidth: '150px', minHeight: '30px', textAlign: 'center' , borderColor:  'black', color: 'black', padding: 5}}>Read More</Button>
 
                 <CardMedia />
             </Grid>

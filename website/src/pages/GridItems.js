@@ -10,8 +10,9 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     heading: {
         textAlign: 'center',
-
-    }
+        
+    },
+  
 
 }));
 
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 export default function MyGridItems(props) {
     const myStyles = useStyles();
     return (
-        <Card>
+        <Card className={myStyles.mainCard}>
             <CardHeader title={props.title} subheader={props.subheader} className={myStyles.heading} />
             <CardMedia
                 className={myStyles.myImage}

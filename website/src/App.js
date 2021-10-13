@@ -10,6 +10,8 @@ import Navigation from './Navbar/Navigation';
 import Interests from './components/Interests';
 import Blog from './components/Blog';
 import Portfolio from './pages/Portfolio';
+import Service from './pages/Service';
+
 
 
 
@@ -23,13 +25,16 @@ function App() {
     <Router>
       <Navigation />
       <Homepage />
+      <h4 className="services">Services</h4>
+
+      <Service />
       <Grid item lg={12} sm={12} xs={12}>
         <h4 className="hobbies">Portfolio</h4>
         <Portfolio />
         <h4 className="hobbies">My Interests</h4>
         <Interests />
-        <h4 className="hobbies">Blog</h4>
-        <Blog />
+        {/* <h4 className="hobbies">Blog</h4> */}
+        {/* <Blog /> */}
       </Grid>
       <Footer />
     </Router>
