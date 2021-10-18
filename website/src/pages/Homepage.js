@@ -1,10 +1,10 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-// import Typography from '@material-ui/core/Typography';
 import MainIntroduction from './MainIntroduction';
 import GridItems from './GridItems';
-
+import Typography from '@material-ui/core/Typography';
+import { MenuButton } from '../Navbar/MenuButton';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -14,10 +14,30 @@ const useStyles = makeStyles((theme) => ({
         padding: 6,
         // marginTop: 50
     },
-    webDev:{
+    introSection: {
+        fontFamily: "Helvetica"
+    },
+    introQuote: {
+        padding: 6,
+
+    },
+    webDev: {
         backgroundColor: "black",
+    },
+    mainGridItem: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        padding: theme.spacing(6),
+        marginLeft: '50px'
+    },
+
+    myImage: {
+        marginLeft: '50px',
+        marginTop: '50px'
+
     }
-    
+
 
 }));
 
@@ -26,32 +46,32 @@ const useStyles = makeStyles((theme) => ({
 export default function Homepage() {
     const myStyles = useStyles();
     return (
- 
+
+
+
         <Grid container spacing={3}>
-            <Grid item lg={12} sm={12} xs={12} className={myStyles.mainIntro}>
-                <MainIntroduction />
-            </Grid>
-{/* 
-            <Grid item sm={6} xs={12} lg={3}>
-                <GridItems className={myStyles.webDev} title="Web Development" subheader="Full Stack Web Developer" description="Skills in php,mysql,html,css and bootstrap.
-                    Web frameworks include; react,django and flask" />
-                    
-            </Grid>
-            <Grid item sm={6} xs={12} lg={3}>
-                <GridItems title="App Development" subheader="Cross Platform Frameworks" description="From simple to complex mobile applications, 
-                proficient skills in flutter, react native and android studio"/>
+
+
+            <Grid item sm={6} xs={12} lg={6} className={myStyles.mainGridItem}>
+                <Typography className={myStyles.introSection} variant="h3" component="h2" >
+                    Software Developer
+                </Typography>
+
+                <Typography className={myStyles.introQuote}>
+
+                    Am a Software Developer with 2 years experience. My specialization ranges from websites to mobile applications.
+
+                </Typography>
+                <MenuButton>CV</MenuButton>
 
             </Grid>
-            <Grid item sm={6} xs={12} lg={3}>
-                <GridItems title="Data Analysis" subheader="Python, R and PowerBI" description="Analyse your data and make proper decisions about
-                 your business process and make Informed decisions."/>
+            <Grid item sm={6} xs={12} lg={3} className={myStyles.myImage}>
+                <img src={require('../me.jpg')} width="90%" height="100%" />
 
             </Grid>
-            <Grid item sm={6} xs={12} lg={3}>
-                <GridItems title="Tutoring" subheader="Knowledge Sharing" description="I do love teaching technology related subjects from basic computing to software development"/>
 
-            </Grid> */}
 
         </Grid>
+
     );
 }

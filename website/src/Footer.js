@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         color: 'white'
     },
     footerPortfolio: {
-        fontSize: 20,
+        fontSize: 22,
 
 
     }
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function Footer() {
-    // const myStyles = useStyles();
+    const myStyles = useStyles();
     return (
 
         <Box>

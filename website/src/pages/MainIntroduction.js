@@ -3,7 +3,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import { MenuButton } from '../Navbar/MenuButton';
 
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,15 +12,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     mainContainer: {
-        height: 300,
-        backgroundColor: "black",
-        color: "white",
+        height: 400,
+        // backgroundColor: "black",
+        color: "black",
         padding: 5
 
     },
     introSection: {
-        color: "yellow",
-        // padding: 15
+        color: "black",
+        padding: 5,
+        fontSize:40
 
     },
 
@@ -50,14 +51,11 @@ export default function MainIntroduction() {
                 </Typography>
 
                 <Typography className={myStyles.introQuote}>
-                    Let me help you build something for your business, this may include a simple website to a complex website
-                    or a mobile application to soot your needs.
 
-                    {/* <img src={require('./me.jpg')} width="300" height="400" /> */}
+                    Am a Software Developer with 2 years experience. My specialization ranges from websites to mobile applications
 
                 </Typography>
-                <Button variant="contained" style={{ maxWidth: '30px', maxHeight: '30px', minWidth: '150px', minHeight: '30px' }}>CV</Button>
-
+                <MenuButton>CV</MenuButton>
                 <CardMedia />
             </Grid>
          
