@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
 
     },
     webDev: {
-        backgroundColor: "black",
+        // backgroundColor: "black",
+        padding: 60
     },
     section: {
         marginTop: '80px'
@@ -35,7 +36,7 @@ export default function Service() {
         <Grid container spacing={3} className={myStyles.section}>
 
 
-            <Grid item sm={6} xs={12} lg={3}>
+            <Grid item sm={6} xs={12} lg={3} className={myStyles.webDev}>
                 <GridItems className={myStyles.webDev} title="Web Development" subheader="Full Stack Web Developer" description="Skills in php,mysql,html,css and bootstrap.
                     Web frameworks include; react,django and flask" />
 

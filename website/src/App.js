@@ -22,9 +22,13 @@ function App() {
       <Navigation />
       <Homepage />
 
-      <h4 className="services">Services</h4>
+      {/* <h4 className="services">Services</h4>
 
-      <Service />
+      <Service /> */}
+      <br />
+      <br />
+
+      <h4 className="hobbies">My Interests</h4>
 
       <Interests />
 
@@ -40,7 +44,6 @@ function App() {
     //   <Grid item lg={12} sm={12} xs={12}>
     //     <h4 className="hobbies">Portfolio</h4>
     //     <Portfolio />
-    //     <h4 className="hobbies">My Interests</h4>
     //     <Interests />
     //     {/* <h4 className="hobbies">Blog</h4> */}
     //     {/* <Blog /> */}

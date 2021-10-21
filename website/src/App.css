@@ -74,7 +74,8 @@
       display:table;
   }
   .nav-links:hover {
-      background-color: rgb(77, 163, 243);
+      /* color: rgb(77, 163, 243); */
+      /* color: black; */
       border-radius: 0;
   }
   .navbar-logo {

@@ -12,9 +12,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     mainContainer: {
-        height: 300,
-        backgroundColor: "#09D2F1",
-        color: "white",
+        height: 500,
+        backgroundColor: "lightblue",
+        color: "black",
         padding: 5,
         marginTop: 20
     },
@@ -23,8 +23,6 @@ const useStyles = makeStyles((theme) => ({
         // padding: 15
 
     },
-
-
     mainGridItem: {
         display: "flex",
         flexDirection: "column",
@@ -33,7 +31,17 @@ const useStyles = makeStyles((theme) => ({
     },
     introQuote: {
         padding: 5
+    },
+    readMore: {
+        backgroundColor: "#09D2F1",
+        // color: "#09D2F1",
+        borderRadius: '30px 30px'
+    },
+    myImage:{
+        padding: 50
+        
     }
+    
 
 }));
 
@@ -42,24 +50,30 @@ const useStyles = makeStyles((theme) => ({
 export default function Interests() {
     const myStyles = useStyles();
     return (
-        <Grid container className={myStyles.mainContainer}>
-            <Grid item md={6} className={myStyles.mainGridItem}>
+        <Grid container spacing={3} className={myStyles.mainContainer}>
+
+            <Grid item sm={12} xs={12} lg={6} className={myStyles.myImage}>
+                <img src={require('../AI.jpg')} width="90%" height="100%" />
+
+            </Grid>
+            <Grid item item sm={12} xs={12} lg={6} className={myStyles.mainGridItem}>
                 <Typography className={myStyles.introSection} variant="h4" component="h2" >
                     Artificial Intelligence
                 </Typography>
 
                 <Typography className={myStyles.introQuote}>
-                    Advancements in technology has really seen a tremendous growth in AI, from Autonomous Cars, Space Exploration, DPAs to Drones. 
+                    Advancements in technology has really seen a tremendous growth in AI, from Autonomous Cars, Space Exploration, DPAs to Drones.
                     It is prudent that we equip ourselves with this techology and its inner workings.
 
-                    {/* <img src={require('./me.jpg')} width="300" height="400" /> */}
 
                 </Typography>
-                <Button variant="contained" style={{ maxWidth: '30px', maxHeight: '30px', minWidth: '150px', minHeight: '30px', textAlign: 'center' , borderColor:  'black', color: 'black', padding: 5}}>Read More</Button>
+                <Button className={myStyles.readMore} variant="contained" style={{ maxWidth: '30px', maxHeight: '30px', minWidth: '150px', minHeight: '30px', textAlign: 'center', color: 'black', padding: 5 }}>Read More</Button>
 
                 <CardMedia />
             </Grid>
-         
+
+
+
 
         </Grid>
 

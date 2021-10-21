@@ -73,8 +73,9 @@
         display:table;
     }
     .nav-links:hover {
-        background-color: #fff;
-        border-radius: 0;
+        justify-content: center;
+        /* background-color: #fff; */
+        border-radius: 20px 20px;
     }
     .navLogo {
         margin-left: -200px;

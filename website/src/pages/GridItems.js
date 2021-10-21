@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-export default function MyGridItems(props) {
+export default function GridItems(props) {
     const myStyles = useStyles();
     return (
         <Card className={myStyles.mainCard}>
