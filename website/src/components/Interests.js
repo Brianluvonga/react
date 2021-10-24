@@ -16,7 +16,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "lightblue",
         color: "black",
         padding: 5,
-        marginTop: 20
+        marginTop: 20,
+        // textAlign: "center",
+
     },
     introSection: {
         color: "black",
@@ -35,10 +37,14 @@ const useStyles = makeStyles((theme) => ({
     readMore: {
         backgroundColor: "#09D2F1",
         // color: "#09D2F1",
-        borderRadius: '30px 30px'
+        borderRadius: '30px 30px',
+        
+
     },
     myImage:{
-        padding: 50
+        padding: 50,
+        textAlign: "center",
+
         
     }
     
@@ -64,10 +70,11 @@ export default function Interests() {
                 <Typography className={myStyles.introQuote}>
                     Advancements in technology has really seen a tremendous growth in AI, from Autonomous Cars, Space Exploration, DPAs to Drones.
                     It is prudent that we equip ourselves with this techology and its inner workings.
+                    <div class="readMoreLink"><a href="https://4luvongabrianmuyekho.wordpress.com/" target="_blank">Read More</a></div>
 
 
                 </Typography>
-                <Button className={myStyles.readMore} variant="contained" style={{ maxWidth: '30px', maxHeight: '30px', minWidth: '150px', minHeight: '30px', textAlign: 'center', color: 'black', padding: 5 }}>Read More</Button>
+                {/* <Button className={myStyles.readMore} variant="contained" style={{ maxWidth: '30px', maxHeight: '30px', minWidth: '150px', minHeight: '30px', textAlign: 'center', color: 'black', padding: 5 }}>Read More</Button> */}
 
                 <CardMedia />
             </Grid>

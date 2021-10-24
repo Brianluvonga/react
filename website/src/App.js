@@ -27,7 +27,8 @@ function App() {
       <Service /> */}
       <br />
       <br />
-
+      <h4 className="hobbies">Portfolio</h4>
+      <Portfolio />
       <h4 className="hobbies">My Interests</h4>
 
       <Interests />

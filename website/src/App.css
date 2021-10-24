@@ -113,7 +113,14 @@
       background: #fff;
       color: #6568F4;
       transform: 250ms;
+      font-weight: bold;
+    
   }
   
+}
+
+.readMoreLink a{
+  text-decoration: none;
+  color: black;
 }
 
