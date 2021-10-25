@@ -5,6 +5,8 @@ import MainIntroduction from './MainIntroduction';
 import GridItems from './GridItems';
 import Typography from '@material-ui/core/Typography';
 import { MenuButton } from '../Navbar/MenuButton';
+import '../App.css';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -46,9 +48,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Homepage() {
     const myStyles = useStyles();
 
-    const downloadMyCV = () => {
-        window.location.href = "C:\Users\USER\Desktop\react\website\src\Brian LuvongaCV.pdf";
-    }
     return (
 
 
@@ -66,9 +65,11 @@ export default function Homepage() {
                     Am a Software Developer with 2 years experience. My specialization ranges from websites to mobile applications.
 
                 </Typography>
-                <MenuButton onClick={downloadMyCV}>
-                    <a href={require("../Brian LuvongaCV.pdf")} download="myFile">CV</a>
-                </MenuButton>
+                <div class="cvLink">
+                    <a href={require("../Brian LuvongaCV.pdf")} download="myFile" >CV</a>
+
+                </div>
+
 
             </Grid>
             <Grid item sm={12} xs={12} lg={3} className={myStyles.myImage}>

@@ -56,7 +56,7 @@ export default function NavigationBar() {
     const myStyles = useStyles();
     return (
 
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+        <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark" fixed="top">
             <Container className={myStyles.container}>
                 <Navbar.Brand  className="mylogo" href="#home">Brian Luvonga</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="float-right"/>
@@ -64,12 +64,9 @@ export default function NavigationBar() {
                     <Nav className="me-auto">
                         <Nav.Link href="#features">Home</Nav.Link>
                         <Nav.Link href="#pricing">About</Nav.Link>
-                        <NavDropdown title="Services" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Web Development</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">App Development</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Data Analysis</NavDropdown.Item>
-                           
-                        </NavDropdown>
+                        <Nav.Link href="#pricing">Contact</Nav.Link>
+
+                     
                     </Nav>
                     <Nav>
                         <Nav.Link href="#deets">CV</Nav.Link>

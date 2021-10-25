@@ -119,8 +119,36 @@
   
 }
 
+.cvLink a{
+  background-color: black;
+  color: #fff;
+  padding: 10px 10px;
+  width: 100px;
+  text-align: center;
+
+}
+
+.cvLink a:hover{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+
+  border-radius: 40px 40px solid;
+}
+
 .readMoreLink a{
   text-decoration: none;
   color: black;
+  text-align: center
 }
-
+.readMoreLink a:hover{
+  border-color: black;
+}
+.blog{
+  text-decoration: none;
+  color: white;
+}
+.blog:hover{
+  color: yellow;
+  text-decoration: none;
+}

@@ -26,14 +26,17 @@ const useStyles = makeStyles((theme) => ({
         // padding: 15
 
     },
-    port1:{
+    port1: {
         textAlign: "center",
         height: "100%",
         cursor: 'pointer',
-        
+        backgroundColor: "black",
+        color: "yellow",
+        padding: 6
+
 
     },
-    blogLink:{
+    blogLink: {
         fontSize: "30px",
         textDecoration: 'none',
         color: "black",
@@ -62,10 +65,12 @@ export default function MainIntroduction() {
 
         <Grid container spacing={3} >
 
-            <Grid item sm={6} xs={12} lg={6} className={myStyles.port1} >
+            <Grid item sm={6} xs={12} lg={3} className={myStyles.port1} >
 
-                <img src={require('../assets/blog.jpg')} width="90%" height="100%" />
-                <Typography className={myStyles.blogLink}><a href="https://4luvongabrianmuyekho.wordpress.com/">Blog</a></Typography>
+                {/* <img src={require('../assets/blog.jpg')} width="90%" height="100%" /> */}
+                <Typography>
+                    <a class="blog" href="https://4luvongabrianmuyekho.wordpress.com/">Blog</a>
+                </Typography>
 
 
             </Grid>
@@ -78,7 +83,7 @@ export default function MainIntroduction() {
 
             </Grid>
             <Grid item sm={6} xs={12} lg={12}>
-        
+
             </Grid>
 
 
