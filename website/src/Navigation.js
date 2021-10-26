@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { NavigationItems } from './Navbar/NavigationItems';
 import './components/Navbar.css';
-import { MenuButton } from './Navbar/MenuButton';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Navigation extends Component {
 
@@ -26,11 +26,11 @@ class Navigation extends Component {
 
                     {NavigationItems.map((item, index) => {
                         return (
-                            <li>
+                            <Link>
                                 <a className={item.cName} href={item.url}>
                                     {item.header}
                                 </a>
-                            </li>
+                            </Link>
                         )
                     })}
 

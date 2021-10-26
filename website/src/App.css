@@ -22,7 +22,8 @@
 
 /* --------------------------- Navigation Section ----------------------- */
 .NavbarItems{
-  background: linear-gradient(90deg, rgb(3, 137, 214) 0%, rgb(77, 163, 243));
+  /* background: linear-gradient(90deg, rgb(3, 137, 214) 0%, rgb(77, 163, 243)); */
+  background-color: black;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -58,10 +59,10 @@
       top: 80px;
       left: -100%;
       opacity: 1;
-      transition: all 0.5s ease;
+      transition: all 1s ease;
   }
   .nav-menu.active {
-      background: rgb(3, 137, 214);
+      background: black;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -111,7 +112,7 @@
   }
   .nav-links-mobile:hover{
       background: #fff;
-      color: #6568F4;
+      /* color: #6568F4; */
       transform: 250ms;
       font-weight: bold;
     
@@ -120,20 +121,21 @@
 }
 
 .cvLink a{
-  background-color: black;
-  color: #fff;
-  padding: 10px 10px;
-  width: 100px;
+  /* background-color: black; */
+  color: black;
+  padding: 3px 40px;
+  /* width: 100px; */
   text-align: center;
+  border: 1px solid orange;
+  margin-top: 90px;
 
 }
 
 .cvLink a:hover{
-  background-color: white;
+  /* background-color: orange; */
   text-decoration: none;
   color: black;
-
-  border-radius: 40px 40px solid;
+  border-radius: 10px 10px;
 }
 
 .readMoreLink a{

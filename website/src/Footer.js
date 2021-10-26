@@ -79,13 +79,7 @@ export default function Footer() {
                                 </span>
                             </i>
                         </FooterLink>
-                        <FooterLink href="#">
-                            <i className="fab fa-instagram">
-                                <span style={{ marginLeft: "10px" }}>
-                                    Instagram
-                                </span>
-                            </i>
-                        </FooterLink>
+                        
                         <FooterLink href="#">
                             <i className="fab fa-twitter">
                                 <span style={{ marginLeft: "10px" }}>
@@ -96,7 +90,7 @@ export default function Footer() {
                         <FooterLink href="#">
                             <i className="fab fa-linkedin">
                                 <span style={{ marginLeft: "10px" }}>
-                                    linkedin
+                                    linkedIn
                                 </span>
                             </i>
                         </FooterLink>

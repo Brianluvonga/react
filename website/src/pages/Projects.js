@@ -18,7 +18,7 @@ const Projects = () => {
                             My blogging platform where I talk about whats happening, with much dwelling on the covid pandemic
                         </p>
 
-                        <a href="https://4luvongabrianmuyekho.wordpress.com/" className=" border-radius 10px 10px btn btn-primary" href="">View Blog</a>
+                        <a href="https://4luvongabrianmuyekho.wordpress.com/" className=" border-radius 10px 10px  btn block-example border border-warning" href="">View Blog</a>
 
                     </MDBCardBody>
 
@@ -30,7 +30,7 @@ const Projects = () => {
                         <p className="black-text">
                             My website, currently under maintenance, great website that talked about emerging technologies and provided useful tech materials
                         </p>
-                        <button className=" border-radius 10px 10px btn btn-primary" >View Website</button>
+                        <button className=" border-radius 10px 10px btn block-example border border-primary" >View Website</button>
 
                     </MDBCardBody>
 

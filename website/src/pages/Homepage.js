@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
         // marginTop: 50
     },
     introSection: {
-        fontFamily: "Helvetica"
+        fontFamily: "Helvetica",
+        color: "orange"
     },
     introQuote: {
         padding: 6,
@@ -31,14 +32,19 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         justifyContent: "center",
         padding: theme.spacing(6),
-        marginLeft: '50px'
+        marginLeft: '120px'
     },
 
     myImage: {
         marginLeft: '50px',
         marginTop: '50px'
 
+    },
+    cv:{
+        justifyContent: "center",
+        padding: theme.spacing(1)
     }
+
 
 
 }));
@@ -50,13 +56,11 @@ export default function Homepage() {
 
     return (
 
-
-
         <Grid container spacing={3}>
 
 
             <Grid item sm={12} xs={12} lg={6} className={myStyles.mainGridItem}>
-                <Typography className={myStyles.introSection} variant="h3" component="h2" >
+                <Typography className={myStyles.introSection} variant="h4" component="h2" >
                     Software Developer
                 </Typography>
 
@@ -65,15 +69,17 @@ export default function Homepage() {
                     Am a Software Developer with 2 years experience. My specialization ranges from websites to mobile applications.
 
                 </Typography>
-                <div class="cvLink">
-                    <a href={require("../Brian LuvongaCV.pdf")} download="myFile" >CV</a>
+                <Typography  className={myStyles.cv}>
+                    <div class="cvLink">
+                        <a href={require("../Brian LuvongaCV.pdf")} download="myFile" >CV</a>
+                    </div>
+                </Typography>
 
-                </div>
 
 
             </Grid>
             <Grid item sm={12} xs={12} lg={3} className={myStyles.myImage}>
-                <img src={require('../me.jpg')} width="90%" height="100%" />
+                <img src={require('../brian.png')} width="90%" height="100%" />
 
             </Grid>
 
