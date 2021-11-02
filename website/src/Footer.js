@@ -41,15 +41,15 @@ export default function Footer() {
                         <FooterLink href="https://github.com/Brianluvonga"  target="_blank">GitHub</FooterLink>
                         {/* <FooterLink href="#">StackOverFlow</FooterLink> */}
                         <FooterLink href="https://www.linkedin.com/in/brian-luvonga-89262b18a/" target="_blank">LinkedIn</FooterLink>
-                        <FooterLink href="#">Blog</FooterLink>
+                        <FooterLink href="https://4luvongabrianmuyekho.wordpress.com/" target="_blank">Blog</FooterLink>
 
                     </Column>
                     <Column>
                         <Heading>My Services</Heading>
-                        <FooterLink href="#" id="skills">Web Development</FooterLink>
-                        <FooterLink href="#">App Development</FooterLink>
-                        <FooterLink href="#">Tutoring</FooterLink>
-                        <FooterLink href="#">Data Analysis</FooterLink>
+                        <FooterLink href="" >Web Development</FooterLink>
+                        <FooterLink href="">App Development</FooterLink>
+                        <FooterLink href="">Tutoring</FooterLink>
+                        <FooterLink href="">Data Analysis</FooterLink>
                     </Column>
                     <Column>
                         <Heading>Contacts</Heading>
@@ -72,7 +72,7 @@ export default function Footer() {
                     </Column>
                     <Column>
                         <Heading>Follow Me</Heading>
-                        <FooterLink href="#">
+                        {/* <FooterLink href="#">
                             <i className="fab fa-facebook-f">
                                 <span style={{ marginLeft: "10px" }}>
                                     Facebook
@@ -86,7 +86,7 @@ export default function Footer() {
                                     Twitter
                                 </span>
                             </i>
-                        </FooterLink>
+                        </FooterLink> */}
                         <FooterLink href="https://www.linkedin.com/in/brian-luvonga-89262b18a/" target='_blank'>
                             <i className="fab fa-linkedin">
                                 <span style={{ marginLeft: "10px" }}>

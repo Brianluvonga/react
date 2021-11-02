@@ -49,7 +49,7 @@ text-decoration: none;
 cursor: pointer;
 
 &:hover {
-	color: #09D2F1;
+	color: white;
 	transition: 200ms ease-in;
 	text-decoration: none;
 }
@@ -57,7 +57,7 @@ cursor: pointer;
 
 export const Heading = styled.p`
 font-size: 20px;
-color: #09D2F1;
+color: orange;
 margin-bottom: 40px;
 font-weight: bold;
 

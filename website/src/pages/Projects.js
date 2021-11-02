@@ -18,7 +18,7 @@ const Projects = () => {
                             My blogging platform where I talk about whats happening, with much dwelling on the covid pandemic
                         </p>
                     
-                        <a href="https://4luvongabrianmuyekho.wordpress.com/" target="_blank" className=" border-radius 10px 10px  btn block-example border border-red" >View Blog</a>
+                        <a href="https://4luvongabrianmuyekho.wordpress.com/" target="_blank" className=" border-radius 10px 10px  btn block-example border border-primary" >View Blog</a>
 
                     </MDBCardBody>
 

@@ -11,14 +11,15 @@ import '../App.css';
 
 const useStyles = makeStyles((theme) => ({
 
-    mainIntro: {
-        textAlign: "left",
-        padding: 6,
-        // marginTop: 50
-    },
+    // mainIntro: {
+    //     textAlign: "left",
+    //     padding: 6,
+    //     // marginTop: 50
+    // },
     introSection: {
         fontFamily: "Helvetica",
-        color: "orange"
+        color: "orange",
+       
     },
     introQuote: {
         padding: 6,

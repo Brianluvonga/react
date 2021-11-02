@@ -26,7 +26,7 @@ const FutureInterests = () => {
                             My blogging platform where I talk about whats happening, with much dwelling on the covid pandemic
                         </p>
 
-                        <a href="https://4luvongabrianmuyekho.wordpress.com/" className=" border-radius 10px 10px btn btn-purple text-white" href="">Read More</a>
+                        <a href="https://www.ibm.com/cloud/learn/machine-learning/" target="_blank" className=" border-radius 10px 10px btn btn-purple text-white">Read More</a>
 
                     </MDBCardBody>
 
@@ -43,7 +43,7 @@ const FutureInterests = () => {
                         <p className="black-text">
                             My website, currently under maintenance, great website that talked about emerging technologies and provided useful tech materials
                         </p>
-                        <button className=" border-radius 10px 10px btn btn-black text-white" >Read More</button>
+                        <a href="https://www.investopedia.com/terms/c/cryptocurrency.asp" target="_blank"  className=" border-radius 10px 10px btn btn-black text-white" >Read More</a >
 
                     </MDBCardBody>
 
@@ -61,7 +61,7 @@ const FutureInterests = () => {
                         <p className="black-text">
                             My website, currently under maintenance, great website that talked about emerging technologies and provided useful tech materials
                         </p>
-                        <button className=" border-radius 10px 10px btn btn-warning " > Read More </button>
+                        <a href="https://www.oracle.com/ke/cloud/what-is-cloud-computing/" target="_blank"  className=" border-radius 10px 10px btn btn-warning " > Read More </a>
 
                     </MDBCardBody>
 
