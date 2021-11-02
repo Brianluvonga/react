@@ -26,11 +26,11 @@ class Navigation extends Component {
 
                     {NavigationItems.map((item, index) => {
                         return (
-                            <Link>
-                                <a className={item.cName} href={item.url}>
+                            <li>
+                                <Link className={item.cName} href={item.url} smooth={true} duration={1000} to={item.scroll}>
                                     {item.header}
-                                </a>
-                            </Link>
+                                </Link>
+                            </li>
                         )
                     })}
 

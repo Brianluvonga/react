@@ -4,8 +4,8 @@ import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput } from "mdbreac
 const Skills = () => {
     return (
         <MDBContainer>
-            <h2 className="h1-responsive font-weight-bold text-center my-5">
-                Skills & Specialization
+            <h2 className="h1-responsive font-weight-bold text-center my-5" id="skills">
+                Skills
             </h2>
 
             <MDBRow className="">
@@ -46,7 +46,7 @@ const Skills = () => {
                             <p className="font-weight-bold text-center">Tutoring</p>
                             <p>Programming</p>
                             <p>Computer Skills</p>
-                            
+                            <p>Software Development</p>
 
                         </li>
                     </ul>

@@ -1,11 +1,8 @@
 import React from 'react';
-// import AppBar from '@material-ui/core/AppBar';
-// import { Toolbar } from '@material-ui/core';
-// import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import './App.css';
-
+import Scroll from 'react-scroll';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 
@@ -62,9 +59,9 @@ export default function NavigationBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="float-right"/>
                 <Navbar.Collapse id="responsive-navbar-nav" className="float-right">
                     <Nav className="me-auto">
-                        <Nav.Link href="#features">Home</Nav.Link>
+                        <Nav.Link href="#features" >Home</Nav.Link>
                         <Nav.Link href="#pricing">About</Nav.Link>
-                        <Nav.Link href="#pricing">Contact</Nav.Link>
+                        <Nav.Link href="#pricing" onSelect={() => Scroll.scrollTo('contacts',{smooth: true,offset: -70,duration: 500,})}>Contact</Nav.Link>
 
                      
                     </Nav>

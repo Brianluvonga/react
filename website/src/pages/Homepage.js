@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '50px'
 
     },
-    cv:{
+    cv: {
         justifyContent: "center",
         padding: theme.spacing(1)
     }
@@ -59,9 +59,9 @@ export default function Homepage() {
         <Grid container spacing={3}>
 
 
-            <Grid item sm={12} xs={12} lg={6} className={myStyles.mainGridItem}>
-                <Typography className={myStyles.introSection} variant="h4" component="h2" >
-                    Software Developer
+            <Grid item sm={12} xs={12} lg={6} className={myStyles.mainGridItem} id="home">
+                <Typography className={myStyles.introSection} variant="h4" component="h2" id="me">
+                    <h2>Software Developer</h2>
                 </Typography>
 
                 <Typography className={myStyles.introQuote}>
@@ -69,7 +69,7 @@ export default function Homepage() {
                     Am a Software Developer with 2 years experience. My specialization ranges from websites to mobile applications.
 
                 </Typography>
-                <Typography  className={myStyles.cv}>
+                <Typography className={myStyles.cv}>
                     <div class="cvLink">
                         <a href={require("../Brian LuvongaCV.pdf")} download="myFile" >CV</a>
                     </div>

@@ -46,10 +46,12 @@ color: #fff;
 margin-bottom: 20px;
 font-size: 14px;
 text-decoration: none;
+cursor: pointer;
 
 &:hover {
 	color: #09D2F1;
 	transition: 200ms ease-in;
+	text-decoration: none;
 }
 `;
 
@@ -58,4 +60,5 @@ font-size: 20px;
 color: #09D2F1;
 margin-bottom: 40px;
 font-weight: bold;
+
 `;

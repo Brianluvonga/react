@@ -38,15 +38,15 @@ export default function Footer() {
                 <Row>
                     <Column>
                         <Heading>Portfolio</Heading>
-                        <FooterLink href="#">GitHub</FooterLink>
-                        <FooterLink href="#">StackOverFlow</FooterLink>
-                        <FooterLink href="#">Linkedin</FooterLink>
+                        <FooterLink href="https://github.com/Brianluvonga"  target="_blank">GitHub</FooterLink>
+                        {/* <FooterLink href="#">StackOverFlow</FooterLink> */}
+                        <FooterLink href="https://www.linkedin.com/in/brian-luvonga-89262b18a/" target="_blank">LinkedIn</FooterLink>
                         <FooterLink href="#">Blog</FooterLink>
 
                     </Column>
                     <Column>
                         <Heading>My Services</Heading>
-                        <FooterLink href="#">Web Development</FooterLink>
+                        <FooterLink href="#" id="skills">Web Development</FooterLink>
                         <FooterLink href="#">App Development</FooterLink>
                         <FooterLink href="#">Tutoring</FooterLink>
                         <FooterLink href="#">Data Analysis</FooterLink>
@@ -87,7 +87,7 @@ export default function Footer() {
                                 </span>
                             </i>
                         </FooterLink>
-                        <FooterLink href="#">
+                        <FooterLink href="https://www.linkedin.com/in/brian-luvonga-89262b18a/" target='_blank'>
                             <i className="fab fa-linkedin">
                                 <span style={{ marginLeft: "10px" }}>
                                     linkedIn

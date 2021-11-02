@@ -4,7 +4,7 @@ import app2 from "../app2.jpg";
 const Projects = () => {
     return (
         <MDBContainer className="">
-            <h2 className="h1-responsive font-weight-bold text-center my-5">
+            <h2 className="h1-responsive font-weight-bold text-center my-5" id="projects">
                 Projects
             </h2>
 
@@ -17,8 +17,8 @@ const Projects = () => {
                         <p className="black-text">
                             My blogging platform where I talk about whats happening, with much dwelling on the covid pandemic
                         </p>
-
-                        <a href="https://4luvongabrianmuyekho.wordpress.com/" className=" border-radius 10px 10px  btn block-example border border-warning" href="">View Blog</a>
+                    
+                        <a href="https://4luvongabrianmuyekho.wordpress.com/" target="_blank" className=" border-radius 10px 10px  btn block-example border border-red" >View Blog</a>
 
                     </MDBCardBody>
 
@@ -30,7 +30,7 @@ const Projects = () => {
                         <p className="black-text">
                             My website, currently under maintenance, great website that talked about emerging technologies and provided useful tech materials
                         </p>
-                        <button className=" border-radius 10px 10px btn block-example border border-primary" >View Website</button>
+                        <a href="https://4luvongabrianmuyekho.wordpress.com/" target="_blank" type="button" className=" border-radius 10px 10px btn block-example border border-primary" >View Website</a>
 
                     </MDBCardBody>
 
@@ -52,7 +52,8 @@ const Projects = () => {
                                 <strong>Mobile Apps</strong>
                             </h3>
                             <p className='pb-3'>
-                                Links to mobile applications av been working on coming soon
+                                Links to mobile applications av been working on coming soon,
+                                for the meantime checkout my Github Repository
                             </p>
 
                         </div>
